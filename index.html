@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="mountain-bg"></div> <div class="glass-container">
+        <header>
+            <div class="logo">YOUR<span>VIBE</span></div>
+            <div id="moodEmoji" class="mood-display">😶</div>
+        </header>
+
+        <section class="input-area">
+            <textarea id="userInput" placeholder="How are you feeling today ?"></textarea>
+            <button id="analyzeBtn">LETS ANALYZE IT</button>
+        </section>
+
+        <div id="loader" class="hidden">Gathering the light...</div>
+        
+        <div id="resultBox" class="hidden">
+            <div class="report-header">MOOD ANALYSIS</div>
+            <div id="urgencyWrapper">
+                <div class="urgency-meta"><span id="urgencyLabel"></span></div>
+                <div class="meter-track"><div id="urgencyMeter"></div></div>
+            </div>
+            <div class="response-container">
+                <div id="aiResponse"></div>
+                <div id="musicSuggestion"></div>
+                <button id="playBtn" class="hidden">LISTEN TO THE MOMENT</button>
+            </div>
+            <button onclick="reset()" class="reset-btn">START OVER</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
