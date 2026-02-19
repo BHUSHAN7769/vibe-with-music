@@ -5,3 +5,5 @@ ai chatbot to analyze feeling through input as paragraph. it give an emoji and s
 2. paste in in very first line of .js file in text 'gemini api key'.
 3. run the html file.
 you can see the design (non working) at  https://bhushan7769.github.io/vibe-with-music/
+
+API cant be given in git since it gives public leak problem.
